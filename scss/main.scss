@@ -1,1 +1,84 @@
 @import "property";
+@import "general";
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        display: flex;
+        background-color: white;
+        width: 730px;
+        height: 280px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 10px 20px 100px hsla(0, 0, 0, 0.1);
+
+        .konten {
+            // border: 1px red solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $light-grayish-blue;
+            .image {
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 280px;
+                }
+            }
+            .isi {
+                background-color: $light-grayish-blue;
+                background-color: white;
+                margin-left: -65px;
+                padding: 42px 50px 40px 40px;
+                .isi-atas {
+                    h2 {
+                        // border: 1px red solid;
+                        font-size: 20.5px;
+                        font-weight: 700;
+                        padding-bottom: 12px;
+                        color: $very-dark-grayish-blue;
+                    }
+                    p {
+                        padding-bottom: 20px;
+                        // border: 1px red solid;
+                        line-height: 20px;
+                        color: $desaturated-dark-blue;
+                        font-size: 13.2px;
+                    }
+                }
+                .isi-bawah {
+                    // border: 1px red solid;
+                    display: flex;
+                    .orang {
+                        border-radius: 50px;
+                        width: 40px;
+                    }
+                    .nama-ttl {
+                        
+                        margin-left: 16px;
+                        h4 {
+                            color: $very-dark-grayish-blue;
+                            line-height: 20px;
+                            font-size: 13.2px;
+                        }
+                        p {
+                            color: $grayish-blue;
+                            line-height: 20px;
+                            font-size: 13.2px;
+                        }
+                    }
+                    .share {
+                        border-radius: 50%;
+                        padding: 8px;
+                        cursor: pointer;
+                        background-color: $light-grayish-blue;
+                    }
+                }
+            }
+        }
+    }
+}

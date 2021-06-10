@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 730px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 20px 100px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 20px 100px rgba(0, 0, 0, 0.1);
+}
+
+.container .card .konten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+}
+
+.container .card .konten .image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 280px;
+}
+
+.container .card .konten .isi {
+  background-color: #ecf2f8;
+  background-color: white;
+  margin-left: -65px;
+  padding: 42px 50px 40px 40px;
+}
+
+.container .card .konten .isi .isi-atas h2 {
+  font-size: 20.5px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  color: #48556a;
+}
+
+.container .card .konten .isi .isi-atas p {
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: #6d7f97;
+  font-size: 13.2px;
+}
+
+.container .card .konten .isi .isi-bawah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card .konten .isi .isi-bawah .orang {
+  border-radius: 50px;
+  width: 40px;
+}
+
+.container .card .konten .isi .isi-bawah .nama-ttl {
+  margin-left: 16px;
+}
+
+.container .card .konten .isi .isi-bawah .nama-ttl h4 {
+  color: #48556a;
+  line-height: 20px;
+  font-size: 13.2px;
+}
+
+.container .card .konten .isi .isi-bawah .nama-ttl p {
+  color: #9eafc2;
+  line-height: 20px;
+  font-size: 13.2px;
+}
+
+.container .card .konten .isi .isi-bawah .share {
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ecf2f8;
+}
+/*# sourceMappingURL=main.css.map */
