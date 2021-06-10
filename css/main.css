@@ -12,7 +12,7 @@ body {
   font-size: 13px;
 }
 
-.container {
+.container1 {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,9 +23,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
-.container .card {
+.container1 .container {
+  width: 730px;
+  height: 280px;
+  position: relative;
+}
+
+.container1 .container .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +45,7 @@ body {
           box-shadow: 10px 20px 100px rgba(0, 0, 0, 0.1);
 }
 
-.container .card .konten {
+.container1 .container .card .konten {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +58,7 @@ body {
   background-color: #ecf2f8;
 }
 
-.container .card .konten .image img {
+.container1 .container .card .konten .image img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,58 +71,127 @@ body {
   height: 280px;
 }
 
-.container .card .konten .isi {
+.container1 .container .card .konten .isi {
   background-color: #ecf2f8;
   background-color: white;
   margin-left: -65px;
   padding: 42px 50px 40px 40px;
+  position: relative;
 }
 
-.container .card .konten .isi .isi-atas h2 {
+.container1 .container .card .konten .isi .isi-atas h2 {
   font-size: 20.5px;
   font-weight: 700;
   padding-bottom: 12px;
   color: #48556a;
 }
 
-.container .card .konten .isi .isi-atas p {
+.container1 .container .card .konten .isi .isi-atas p {
   padding-bottom: 20px;
   line-height: 20px;
   color: #6d7f97;
   font-size: 13.2px;
 }
 
-.container .card .konten .isi .isi-bawah {
+.container1 .container .card .konten .isi .isi-bawah {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  margin-right: -10px;
 }
 
-.container .card .konten .isi .isi-bawah .orang {
+.container1 .container .card .konten .isi .isi-bawah .orang {
   border-radius: 50px;
   width: 40px;
 }
 
-.container .card .konten .isi .isi-bawah .nama-ttl {
+.container1 .container .card .konten .isi .isi-bawah .nama-ttl {
   margin-left: 16px;
 }
 
-.container .card .konten .isi .isi-bawah .nama-ttl h4 {
+.container1 .container .card .konten .isi .isi-bawah .nama-ttl h4 {
   color: #48556a;
   line-height: 20px;
   font-size: 13.2px;
 }
 
-.container .card .konten .isi .isi-bawah .nama-ttl p {
+.container1 .container .card .konten .isi .isi-bawah .nama-ttl p {
   color: #9eafc2;
   line-height: 20px;
   font-size: 13.2px;
 }
 
-.container .card .konten .isi .isi-bawah .share {
-  border-radius: 50%;
+.container1 .container .card .konten .isi .isi-bawah #share {
+  position: absolute;
+  top: 4px;
+  right: 0;
   padding: 8px;
+  border-radius: 50%;
   cursor: pointer;
   background-color: #ecf2f8;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.container1 .container .card .konten .isi .isi-bawah #share:hover {
+  color: white;
+  background-color: #48556a;
+}
+
+.container1 .container .card .konten .isi .isi-bawah #share:hover img {
+  -webkit-filter: brightness(255);
+          filter: brightness(255);
+}
+
+.container1 .container-sosialmed {
+  -webkit-transition: 4s all ease;
+  transition: 4s all ease;
+  display: none;
+  position: relative;
+}
+
+.container1 .container-sosialmed .socials {
+  z-index: 1;
+  border-radius: 10px;
+  right: -70px;
+  top: -150px;
+  padding: 0 40px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 55px;
+  background-color: #48556a;
+}
+
+.container1 .container-sosialmed .socials span {
+  color: #9eafc2;
+  letter-spacing: 4px;
+  font-weight: 500px;
+  letter-spacing: 5px;
+}
+
+.container1 .container-sosialmed .socials a {
+  font-size: 1.5rem;
+}
+
+.container1 .container-sosialmed .pointer {
+  z-index: -1;
+  right: 105px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #48556a;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=main.css.map */
