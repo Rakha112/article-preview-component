@@ -134,6 +134,16 @@ body {
   transition: 0.5s all ease;
 }
 
+.container1 .container .card .konten .isi .isi-bawah #share.aktif {
+  color: white;
+  background-color: #48556a;
+}
+
+.container1 .container .card .konten .isi .isi-bawah #share.aktif img {
+  -webkit-filter: brightness(255);
+          filter: brightness(255);
+}
+
 .container1 .container .card .konten .isi .isi-bawah #share:hover {
   color: white;
   background-color: #48556a;
@@ -145,10 +155,12 @@ body {
 }
 
 .container1 .container-sosialmed {
-  -webkit-transition: 4s all ease;
-  transition: 4s all ease;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
   position: relative;
+  top: 20px;
 }
 
 .container1 .container-sosialmed .socials {
@@ -193,5 +205,14 @@ body {
   background-color: #48556a;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.container1 .container-sosialmed.aktif {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

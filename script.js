@@ -1,11 +1,11 @@
 const x = document.querySelector(".container-sosialmed")
 const tombol = document.querySelector("#share")
+const aktif = document.querySelector(".aktif")
 
 tombol.addEventListener("click", function(event){
 
-    if (x.style.display === "flex") {
-        x.style.display = "none"; 
-      } else {
-        x.style.display = "flex";
-      }
+    if (aktif === null) {
+        x.classList.toggle("aktif") 
+        tombol.classList.toggle("aktif")
+      } 
 });
